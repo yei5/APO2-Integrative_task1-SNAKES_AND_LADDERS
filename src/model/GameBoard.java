@@ -95,7 +95,7 @@ public class GameBoard {
     }
 
     //printMessage with the correct format with max length of 8
-    private String getString(Square current){
+    private  String getString(Square current){
         if(current.getMessage().length()==8){
             return "[ "+current.getMessage()+ " ] ";
         }

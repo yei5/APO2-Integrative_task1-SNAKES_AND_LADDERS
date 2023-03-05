@@ -1,25 +1,18 @@
 package ui;
 
-import  model.*;
+import  model.Controller;
 import java.util.*;
 public class Main {
 
     private Controller controller;
-
     public static Scanner sc = new Scanner(System.in);
     public Main(){
         controller = new Controller();
     }
 
-    public static void main(String[] args){
-
+    public static void main(String[] args) {
         Main main = new Main();
         main.menu();
-
-
-
-
-
     }
 
     public void menu(){
