@@ -1,21 +1,24 @@
 package model;
 
+
 public class Player {
-    private String id;
+    private String symbol;
     private double score;
+    private Player left;
+    private Player right;
 
 
-    public Player(String id) {
-        this.id = id;
+    public Player( String symbol) {
+        this.symbol = symbol;
         this.score=0;
     }
 
-    public String getId() {
-        return id;
+    public String getSymbol() {
+        return symbol;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
     }
 
     public double getScore() {
@@ -24,5 +27,21 @@ public class Player {
 
     public void setScore(double score) {
         this.score = score;
+    }
+
+    public Player getLeft() {
+        return left;
+    }
+
+    public void setLeft(Player left) {
+        this.left = left;
+    }
+
+    public Player getRight() {
+        return right;
+    }
+
+    public void setRight(Player right) {
+        this.right = right;
     }
 }

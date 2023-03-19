@@ -5,15 +5,20 @@ public class Square {
     private Square next;
     private Square previous;
     private int value;
+    private String id;
     private Player player1;
     private Player player2;
     private Player player3;
     private String message;
+    private boolean isHead;
+    private boolean isBottom;
 
 
     public Square(int value){
         this.value = value;
-        this.message=value+"%%%";
+        this.message=value+"";
+        this.id="";
+        this.isHead=false;
     }
 
     public Square getNext() {
@@ -70,5 +75,37 @@ public class Square {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public boolean getIsHead() {
+        return isHead;
+    }
+
+    public void setIsHead(boolean head) {
+        isHead = head;
+    }
+
+    public boolean isHead() {
+        return isHead;
+    }
+
+    public void setHead(boolean head) {
+        isHead = head;
+    }
+
+    public boolean getIsBottom() {
+        return isBottom;
+    }
+
+    public void setIsBottom(boolean bottom) {
+        isBottom = bottom;
     }
 }
